@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import '../css/currency.css';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import axios from 'axios';
-
+import { API_KEY } from '../key.js';
 let BASE_URL = "https://api.freecurrencyapi.com/v1/latest";
-let API_KEY = "fca_live_eIbYymFE1Hbip0dm1hdPfq6vgdFEZBiI1YWprmFv";
 
 function Currency() {
     const [amount, setAmount] = useState();
